@@ -137,7 +137,7 @@ namespace GndAbsPressUpdater
                 Host.config[MaxPressureDeltaPaConfigKey] = MaxPressureDeltaPa.ToString();
             }
             //y la unidad
-            if (Enum.TryParse<PressureUnitEnum>(mForm.mGroundUnitsComboBox.SelectedText, out PressureUnitEnum pu))
+            if (Enum.TryParse<PressureUnitEnum>(mForm.mGroundUnitsComboBox.SelectedItem.ToString(), out PressureUnitEnum pu))
             {
                 PressureUnit = pu;
                 Host.config[PressureUnitConfigKey] = PressureUnit.ToString();
